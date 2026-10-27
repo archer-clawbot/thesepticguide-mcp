@@ -1,0 +1,12 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.thesepticguide/thesepticguide",
+  "title": "The Septic Guide",
+  "description": "U.S. septic licensing by state, license-matched septic companies, and cited septic cost guides.",
+  "websiteUrl": "https://thesepticguide.com/",
+  "repository": { "url": "https://github.com/archer-clawbot/thesepticguide-mcp", "source": "github" },
+  "version": "0.2.0",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://mcp.thesepticguide.com/mcp" }
+  ]
+}

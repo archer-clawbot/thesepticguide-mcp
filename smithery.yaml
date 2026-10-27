@@ -1,0 +1,13 @@
+# Smithery now prefers URL publishing (smithery.ai/new -> https://mcp.thesepticguide.com/mcp).
+# This file supports the container/stdio path as a fallback.
+runtime: "container"
+build:
+  dockerfile: "Dockerfile"
+  dockerBuildPath: "."
+startCommand:
+  type: "stdio"
+  configSchema:
+    type: "object"
+    properties: {}
+  commandFunction: |-
+    () => ({ command: "node", args: ["dist/stdio.js"] })

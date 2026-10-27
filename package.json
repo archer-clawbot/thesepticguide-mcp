@@ -1,0 +1,48 @@
+{
+  "name": "thesepticguide-mcp",
+  "version": "0.2.0",
+  "description": "Read-only MCP server for The Septic Guide: state septic licensing, licensed septic companies, and cited cost guides.",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc && chmod +x dist/stdio.js",
+    "start": "node dist/stdio.js",
+    "start:http": "node dist/local-http.js",
+    "test": "node test/smoke.mjs",
+    "snapshot": "npm run build && node dist/snapshot.js"
+  },
+  "keywords": [
+    "mcp",
+    "septic",
+    "contractor-license",
+    "directory"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "cheerio": "^1.2.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  },
+  "type": "module",
+  "bin": {
+    "thesepticguide-mcp": "dist/stdio.js"
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md",
+    "LICENSE"
+  ],
+  "mcpName": "com.thesepticguide/thesepticguide",
+  "homepage": "https://thesepticguide.com/",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archer-clawbot/thesepticguide-mcp.git"
+  }
+}
