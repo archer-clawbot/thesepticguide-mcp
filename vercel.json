@@ -1,1 +1,19 @@
-{ "buildCommand": "npm run build", "functions": { "api/mcp.ts": { "includeFiles": "data/**" } }, "rewrites": [{ "source": "/mcp", "destination": "/api/mcp" }, { "source": "/", "destination": "/api/mcp" }] }
+{
+  "framework": null,
+  "buildCommand": "npm run build",
+  "functions": {
+    "api/mcp.ts": {
+      "includeFiles": "data/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/mcp",
+      "destination": "/api/mcp"
+    },
+    {
+      "source": "/",
+      "destination": "/api/mcp"
+    }
+  ]
+}

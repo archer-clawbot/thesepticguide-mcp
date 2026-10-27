@@ -2,7 +2,7 @@
   "name": "thesepticguide-mcp",
   "version": "0.2.0",
   "description": "Read-only MCP server for The Septic Guide: state septic licensing, licensed septic companies, and cited cost guides.",
-  "main": "dist/server.js",
+  "main": "dist/mcp-server.js",
   "scripts": {
     "build": "tsc && chmod +x dist/stdio.js",
     "start": "node dist/stdio.js",

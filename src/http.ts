@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
-import { createServer } from "./server.js";
+import { createServer } from "./mcp-server.js";
 
 // Stateless Streamable HTTP handler: one server+transport per request (serverless-friendly).
 export async function handleMcp(req: IncomingMessage & { body?: unknown }, res: ServerResponse) {
