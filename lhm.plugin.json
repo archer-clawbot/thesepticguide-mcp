@@ -1,0 +1,11 @@
+{
+  "identifier": "thesepticguide",
+  "name": "The Septic Guide",
+  "version": "0.2.0",
+  "description": "U.S. septic licensing by state, license-matched septic companies, and cited septic cost guides.",
+  "homepage": "https://thesepticguide.com",
+  "author": "Catalyst Digital Services LLC",
+  "license": "MIT",
+  "cloudEndpoint": "https://mcp.thesepticguide.com/mcp",
+  "tags": ["septic", "contractor license", "directory", "home services", "cost guide"]
+}
